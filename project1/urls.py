@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
     path('', include('posts.urls')),
-    path('', include('blog.urls')) # Include your app's URLs here
+    path('', include('blog.urls')), # Include your app's URLs here
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()
